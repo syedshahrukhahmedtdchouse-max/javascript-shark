@@ -62,6 +62,23 @@
 // Example 3: Extract properties from objects>>>>>>>>>>>>>>>>>>>>>
 
 
-let students = [
-    
-]
+// let students = [
+// { name: "John", age: 20 },
+// { name: "Sarah", age: 22 },
+// { name: "Mike", age: 21 }
+// ];
+// let studentNames = students.map((student) => student.name);
+// console.log(studentNames);
+
+
+// Example 4: Add sales tax
+
+// let prices = [100, 200, 150];
+// let pricesWithTax = prices.map((price) => price * 1.18);
+// console.log(pricesWithTax);
+
+// Example 5: Create HTML elements
+
+// let items = ["Home", "About", "Contact"];
+// let menuItems = items.map((item) => `<li>${item}</li>`);
+// console.log(menuItems);
