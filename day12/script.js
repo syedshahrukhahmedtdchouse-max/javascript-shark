@@ -124,7 +124,7 @@
 //   // backend call
 // });
 
-const heading1 = document.querySelector("#heading1");
+// const heading1 = document.querySelector("#heading1");
 // console.log(heading1.innerText);
 
 // const form = document.querySelector("form");
@@ -179,39 +179,39 @@ const heading1 = document.querySelector("#heading1");
 //   para.innerText = `rgb(${red}, ${green}, ${blue})`
 // })
 
-const inputBox = document.querySelector("#input-box");
-const addTodoBtn = document.querySelector("#add-todo-btn");
+// const inputBox = document.querySelector("#input-box");
+// const addTodoBtn = document.querySelector("#add-todo-btn");
 
-function deleteFn() {
-  console.log("delete button clicked");
-}
+// function deleteFn() {
+//   console.log("delete button clicked");
+// }
 
-let counter = 0;
+// let counter = 0;
 
-addTodoBtn.addEventListener("click", () => {
-  const div = document.createElement("div");
-  div.setAttribute("id", counter);
+// addTodoBtn.addEventListener("click", () => {
+//   const div = document.createElement("div");
+//   div.setAttribute("id", counter);
 
-  counter++;
+//   counter++;
 
-  const newParaTag = document.createElement("p");
-  newParaTag.innerHTML = inputBox.value;
+//   const newParaTag = document.createElement("p");
+//   newParaTag.innerHTML = inputBox.value;
 
-  const deleteBtn = document.createElement("button");
-  deleteBtn.innerText = "Delete";
-  deleteBtn.setAttribute("onclick", "deleteFn()");
+//   const deleteBtn = document.createElement("button");
+//   deleteBtn.innerText = "Delete";
+//   deleteBtn.setAttribute("onclick", "deleteFn()");
 
-  const editBtn = document.createElement("button");
-  editBtn.innerText = "Edit";
+//   const editBtn = document.createElement("button");
+//   editBtn.innerText = "Edit";
 
-  div.insertAdjacentElement("afterbegin", editBtn);
-  div.insertAdjacentElement("afterbegin", deleteBtn);
-  div.insertAdjacentElement("afterbegin", newParaTag);
+//   div.insertAdjacentElement("afterbegin", editBtn);
+//   div.insertAdjacentElement("afterbegin", deleteBtn);
+//   div.insertAdjacentElement("afterbegin", newParaTag);
 
-  addTodoBtn.insertAdjacentElement("afterend", div);
+//   addTodoBtn.insertAdjacentElement("afterend", div);
 
-  inputBox.value = "";
-});
+//   inputBox.value = "";
+// });
 
 
 
@@ -580,3 +580,63 @@ addTodoBtn.addEventListener("click", () => {
 // display.style.fontWeight = "bold";
 // }
 // });
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// const box = document.querySelector("#box");
+// const para = document.querySelector("#para")
+// const btn = document.querySelector("#btn")
+
+// btn.addEventListener("click", ()=>{
+
+//   const red = Math.floor(Math.random() * 256) // 0-255
+//   const green = Math.floor(Math.random() * 256) // 0-255
+//   const blue = Math.floor(Math.random() * 256) // 0-255
+
+//   box.style.backgroundColor = `rgb(${red}, ${green}, ${blue})` // "rgb(233, 234, 9)"
+//   para.innerText = `rgb(${red}, ${green}, ${blue})`
+// })
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+const box1 = document.querySelector("#box-1")
+const p1 = document.querySelector("#p-1")
+const box2 = document.querySelector("#box-2")
+const p2 = document.querySelector("#p-2")
+const box3 = document.querySelector("#box-3")
+const p3 = document.querySelector("#p-3")
+const box4 = document.querySelector("#box-4")
+const p4 = document.querySelector("#p-4")
+const box5 = document.querySelector("#box-5")
+const btn = document.querySelector("#btn")
+const p5 = document.querySelector("#p-5")
+console.log("sdfsdfdff")
+btn.addEventListener("click", ()=>{
+  const red1 = Math.floor(Math.random() * 256) // 0-255
+  const green1 = Math.floor(Math.random() * 256) // 0-255
+  const blue1 = Math.floor(Math.random() * 256) // 0-255
+  const red2 = Math.floor(Math.random() * 256) // 0-255
+  const green2 = Math.floor(Math.random() * 256) // 0-255
+  const blue2 = Math.floor(Math.random() * 256) // 0-255
+  const red3 = Math.floor(Math.random() * 256) // 0-255
+  const green3 = Math.floor(Math.random() * 256) // 0-255
+  const blue3 = Math.floor(Math.random() * 256) // 0-255
+  const red4 = Math.floor(Math.random() * 256) // 0-255
+  const green4 = Math.floor(Math.random() * 256) // 0-255
+  const blue4 = Math.floor(Math.random() * 256) // 0-255
+  const red5 = Math.floor(Math.random() * 256) // 0-255
+  const green5 = Math.floor(Math.random() * 256) // 0-255
+  const blue5 = Math.floor(Math.random() * 256) // 0-255
+
+p1.innerText = `(${red1},${green1},${blue1})`
+p2.innerText = `(${red2},${green2},${blue2})`
+p3.innerText = `(${red3},${green3},${blue3})`
+p4.innerText = `(${red4},${green4},${blue4})`
+p5.innerText = `(${red5},${green5},${blue5})`
+
+
+  box1.style.backgroundColor = `rgb(${red1}, ${green1}, ${blue1})` // "rgb(233, 234, 9)"
+  box2.style.backgroundColor = `rgb(${red2}, ${green2}, ${blue2})` // "rgb(233, 234, 9)"
+  box3.style.backgroundColor = `rgb(${red3}, ${green3}, ${blue3})` // "rgb(233, 234, 9)"
+  box4.style.backgroundColor = `rgb(${red4}, ${green4}, ${blue4})` // "rgb(233, 234, 9)"
+  box5.style.backgroundColor = `rgb(${red5}, ${green5}, ${blue5})` // "rgb(233, 234, 9)"
+
+})
