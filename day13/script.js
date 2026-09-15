@@ -46,3 +46,67 @@
 
 
 // 6. Callback Hell (The Pyramid of Doom)>>>>>>>>>>>>>>>
+
+// function changeColor(color, delay, callback) {
+// setTimeout(() => {
+// document.body.style.backgroundColor = color;
+// console.log("Changed to", color);
+// if (callback) callback();
+// }, delay);
+// }
+// // THE PYRAMID OF DOOM 
+// changeColor("red", 3000, () => {
+// changeColor("orange", 3000, () => {
+// changeColor("green", 3000, () => {
+// changeColor("blue", 3000, () => {
+// console.log("All colors done!");
+// });
+// });
+// });
+// });
+// ?>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// function registerUser(username,callback){
+//     setTimeout(()=>{
+//         console.log("user registered :",username);
+//         callback();
+
+//     },1000);
+// }
+
+// function sendVerification(callback){
+//     setTimeout(()=>{
+//         console.log("verification email sent");
+//         callback();
+//     },1000);
+// }
+
+// function updateDataBase(callback){
+//     setTimeout(()=>{
+//         console.log("database updated")
+//         callback();
+//     },1000);
+// }
+
+// function sendWelcomeSMS(callback){
+//     setTimeout(()=>{
+//         console.log("Welcome sms sent")
+//         callback();
+//     },1000);
+// };
+
+
+
+// // callbackhell?????
+// registerUser("saad SWEETBOY",()=>{
+//     sendVerification(()=>{
+//         updateDataBase(()=>{
+//             sendWelcomeSMS(()=>{
+//                 console.log("registration completed")
+//             });
+//         });
+//     });
+// });
+
+// 7. Promises: The Solution>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+let myPromise = new Promise(())
